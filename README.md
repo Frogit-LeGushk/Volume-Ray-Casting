@@ -4,3 +4,5 @@
 ### Then to run project:
 - `download` [GLFW]
 - `make`
+
+   [GLFW]: <https://www.glfw.org/download.html>
