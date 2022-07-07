@@ -9,8 +9,8 @@
 #include <cmath>
 #include <cassert>
 
-#define W 1920
-#define H 1080
+int W = 1920;
+int H = 1080;
 
 using namespace std;
 
@@ -28,6 +28,9 @@ int main()
 
     GLFWmonitor *   monitor     =   glfwGetPrimaryMonitor();
     GLFWwindow  *   window      =   glfwCreateWindow(W, H, "Ray Casting", monitor, NULL);
+    const GLFWvidmode * mode    =   glfwGetVideoMode(monitor);
+    W = mode->width;
+    H = mode->height;
 
     if (!window) {glfwTerminate(); return -1;}
     glfwSetKeyCallback(window, __key_callback);
