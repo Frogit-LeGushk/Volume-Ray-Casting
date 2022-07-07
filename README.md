@@ -7,4 +7,4 @@
 - `make`
 
    [GLFW]: <https://www.glfw.org/download.html>
-   [GLAD header]: <https://glad.dav1d.de/>
+   [GLAD]: <https://glad.dav1d.de/>
